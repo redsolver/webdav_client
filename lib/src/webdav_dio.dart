@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:io';
+// import 'dart:io';
 import 'dart:typed_data';
 
 import 'adapter/adapter_stub.dart'
@@ -249,7 +249,7 @@ class WdDio with DioMixin implements Dio {
   }
 
   /// read a file with stream
-  Future<void> wdReadWithStream(
+  /* Future<void> wdReadWithStream(
     Client self,
     String path,
     String savePath, {
@@ -412,7 +412,7 @@ class WdDio with DioMixin implements Dio {
       });
     }
     await DioMixin.listenCancelForAsyncTask(cancelToken, future);
-  }
+  } */
 
   /// write a file with bytes
   Future<void> wdWriteWithBytes(

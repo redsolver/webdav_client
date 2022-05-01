@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
-import 'dart:io' as io;
+// import 'dart:io' as io;
 import 'auth.dart';
 import 'file.dart';
 import 'utils.dart';
@@ -163,7 +163,7 @@ class Client {
   }
 
   /// Read the bytes of a file with stream and write to a local file
-  Future<void> read2File(
+  /* Future<void> read2File(
     String path,
     String savePath, {
     void Function(int count, int total)? onProgress,
@@ -176,7 +176,7 @@ class Client {
           onProgress: onProgress,
           cancelToken: cancelToken,
         );
-  }
+  } */
 
   /// Write the bytes to remote path
   Future<void> write(
@@ -195,7 +195,7 @@ class Client {
   }
 
   /// Read local file stream and write to remote file
-  Future<void> writeFromFile(
+/*   Future<void> writeFromFile(
     String localFilePath,
     String path, {
     void Function(int count, int total)? onProgress,
@@ -210,7 +210,7 @@ class Client {
           onProgress: onProgress,
           cancelToken: cancelToken,
         );
-  }
+  } */
 }
 
 /// create new client
